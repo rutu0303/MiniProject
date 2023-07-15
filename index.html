@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=Ysabeau+Infant:wght@200&display=swap"
+        rel="stylesheet">
+    <title>History of India</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            width: 100%;
+            top: 0px;
+            z-index: 3;
+            height: auto;
+            background-color: rgb(249, 247, 243);
+        }
+
+        .zero {
+            height: .8vh;
+            background-color: orange;
+        }
+
+        .logo {
+            display: inline;
+            height: 70px;
+            margin-left: 1.5vw;
+            margin-top: 1vh;
+            position: relative;
+        }
+
+        h1 {
+            display: inline;
+            font-size: 2.5rem;
+            color: rgb(99, 41, 0);
+            align-content: center;
+        }
+
+        .twonav {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        .subhead {
+            font-size: 2.5rem;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: lighter;
+            position: absolute;
+            bottom: 30px;
+            left: 33%;
+            right: 33%;
+            letter-spacing: 2px;
+        }
+
+        .twoimg {
+            width: 100%;
+            height: 55vh;
+            background-size: cover;
+            filter: brightness(65%);
+        }
+
+        .container {
+            margin: 0;
+            height: auto;
+            background-color: rgb(240, 240, 240);
+            display: grid;
+            grid-template-columns: 85vw;
+            justify-content: space-around;
+        }
+
+        .subcan {
+            margin-top: 4%;
+            background-color: white;
+            height: auto;
+            padding-top: 30px;
+            padding: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3rem;
+            font-family: 'Ysabeau Infant', sans-serif;
+            font-weight: lighter;
+            line-height: 3rem;
+        }
+
+        h3 {
+            font-family: 'Ysabeau Infant', sans-serif;
+            font-weight: normal;
+            font-size: 2rem;
+            color: rgb(99, 41, 0);
+        }
+
+        .content {
+            box-sizing: content-box;
+            border: 2px burlywood solid;
+            padding-left: 2rem;
+        }
+
+        .bor {
+            border-bottom: 2px rgb(100, 16, 16) solid;
+        }
+
+        .text {
+            padding-bottom: 35px;
+            font-size: 1.3rem;
+            font-family: 'Ysabeau Infant', sans-serif;
+            line-break: auto;
+            line-height: 1.9rem;
+            color: rgb(48, 9, 9);
+            text-align: justify;
+        }
+
+        .picL {
+            width: 40vw;
+            float: left;
+            padding-right: 1vw;
+            transition: transform 0.3s;
+        }
+
+        .picR {
+            width: 40vw;
+            float: right;
+            padding-left: 1vw;
+            transition: transform 0.3s;
+        }
+
+        .picL:hover, .picR:hover {
+            transform: scale(0.8);
+        }
+
+        .name {
+            padding-top: 25px;
+            font-size: 2.2rem;
+            color: rgb(99, 41, 0);
+            padding-bottom: 15px;
+            font-family: 'Ysabeau Infant', sans-serif;
+            font-weight: bolder;
+        }
+
+        footer {
+            position: sticky;
+            width: 100%;
+            bottom: 0px;
+            z-index: 3;
+            height: 3vh;
+            background-color: rgb(243, 209, 146);
+            font-size: 1rem;
+            color: rgb(80, 40, 11);
+            text-align: right;
+        }
+
+        .foot {
+            margin-right: 10px;
+        }
+
+        .more {
+            background-color: rgb(77, 28, 28);
+            color: white;
+            height: 5vh;
+            margin-bottom: 3vh;
+            margin-right: 3vh;
+            font-size: large;
+            letter-spacing: .2rem;
+        }
+
+        p {
+            font-size: larger;
+            font-weight: bold;
+            font-family: 'Ysabeau Infant', sans-serif;
+            background-color: rgb(77, 28, 28);
+            color: white;
+        }
+
+
+        @media screen and (max-width:600px) {
+            .zero {
+                height: 0.7vh;
+            }
+
+            h1 {
+                margin-top: 5vh;
+                font-size: 1.5rem;
+            }
+
+            .logo {
+                height: 45px;
+                margin-left: 2vw;
+                margin-top: 1vh;
+            }
+
+            .twoimg {
+                width: 100%;
+                height: 40vh;
+                filter: brightness(70%);
+            }
+
+            .twonav {
+                position: relative;
+                text-align: center;
+            }
+
+            .subhead {
+                font-size: 1.5rem;
+                font-family: Kanit;
+                font-weight: lighter;
+                position: absolute;
+                bottom: 20%;
+                left: 1%;
+                right: 1%;
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+            .container {
+                grid-template-columns: 90vw;
+            }
+
+            .subcan {
+                margin-top: 2%;
+            }
+
+            .bor {
+                border-bottom: 1px rgb(100, 16, 16) solid;
+            }
+
+            .text {
+                padding-bottom: 20px;
+                font-size: 1rem;
+                font-family: 'Ysabeau Infant', sans-serif;
+                line-height: 1.3rem;
+
+            }
+
+            .picL {
+                width: 100%;
+                padding-right: 1.5vw;
+            }
+
+            .picR {
+                width: 100%;
+                padding-right: 1.5vw;
+            }
+
+            .name {
+                font-size: 1.5rem;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+
+            a {
+                font-size: 1rem;
+                line-height: 2rem;
+            }
+
+            .content {
+                border: 1.5px burlywood solid;
+                padding-left: .8rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            .more {
+                height: 4vh;
+                margin-bottom: 1vh;
+                margin-right: 1vh;
+                font-size: 1rem;
+                letter-spacing: .05rem;
+            }
+
+            p {
+                font-size: normal;
+                font-weight: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="zero"></nav>
+        <nav class="onenav">
+            <img class="logo"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWvY8xh5qXgTDtjh_U88RZzVMIiUqpFrpLJiB0sKe02SksGLp_OxvV2bnMd19rBPz_G_8&usqp=CAU"
+                alt="logo">
+            <b>
+                <h1>Hidden treasures of India</h1>
+            </b>
+        </nav>
+    </header>
+    <section>
+        <div class="twonav">
+            <img class="twoimg"
+                src="https://htoindia.com/wp-content/uploads/2017/07/UNESCO-world-heritage-sites-india.jpg" alt="image">
+            <div class="subhead">Indian Heritage</div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="subcan">
+                <div class="box0 ">
+                    <div class="text">As of 2022, there are 40 World Heritage Sites located in India. Out of these, 32
+                        are cultural, 7 are natural, and one, the Khangchendzonga National Park, is of mixed type. India
+                        has the sixth largest number of sites in the world. The first sites to be listed were the Ajanta
+                        Caves, Ellora Caves, Agra Fort, and Taj Mahal, all of which were inscribed in the 1983 session
+                        of the World Heritage Committee. The most recent site listed was Dholavira, in 2021. At
+                        different times, two sites were listed as endangered: the Manas Wildlife Sanctuary was listed
+                        between 1992 and 2011 due to poaching and activities of the Bodo militias,and the monuments at
+                        Hampi were listed between 1999 and 2006 due to risks from increased traffic and new
+                        constructions in surroundings. One site is transnational, The Architectural Work of Le Corbusier
+                        is shared with six other countries. In addition, India has 52 sites on its tentative list.</div>
+                    <h3>Table of content</h3>
+                    <div class="content">
+
+                        <a href="miniproject.html#one">1. QutubMinar, Delhi</a><br>
+                        <a href="miniproject.html#two">2. Red fort complex, Delhi</a><br>
+                        <a href="miniproject.html#three">3. Group of Monuments in Pattadakal</a><br>
+                        <a href="miniproject.html#four">4. Buddhist Monuments in Sanchi</a><br>
+                        <a href="miniproject.html#five">5. Ajanta Caves, Near Aurangabad</a><br>
+                        <a href="miniproject.html#six">6. Sun Temple, Konark</a><br>
+                        <a href="miniproject.html#seven">7. Taj Mahal, Agra</a><br>
+                        <a href="miniproject.html#eight">8. Rani-Ki-Vav (the Queen’s Stepwell) at Patan, Gujarat
+                        </a><br>
+                        <div class="more">For further information click on the pictures</div>
+                    </div>
+                </div>
+
+                <div class="box1 bor">
+                    <div id="one" class="name">QutubMinar, Delhi</div>
+                    <a href="https://en.wikipedia.org/wiki/Qutb_Minar"><img
+                            src="https://swantours.files.wordpress.com/2017/05/qutub-minar.jpg?w=636" alt="image here"
+                            class="picL"></a>
+
+                    <div class="text">The Qutub Minar complex was built to honor the Sufi saint Qutbuddin Bakhtiar Kaki.
+                        The Minar was founded by Qutb-ud-din Aibak during the Mamluk dynasty.
+
+                        Afterward, the construction of this Minar was done by several successors including Iltutmish and
+                        Firoz Shah Tughlaq. The QutbMinar is the tallest brick minaret in the world.
+
+                        The height of the QutbMinar is 72.5 meter and you can find some balcony in inside this five
+                        storey minar.
+
+                        The QutbMinar was built as victory tower to celebrate the success of Mohammed Ghori against the
+                        Rajput king Prithviraj Chauhan in 1192 AD.
+
+                        After that, Qutb-ud-din Aibak added the first storey and the next three floors were added by his
+                        son-in-law Iltutmish. Afterward, in 1351, Firoz Shah Tughlaq extended some floors of this minar
+                        and constructed the distinctive multicolored looks designed with sand stones of the minar.
+
+                        Here you can find the main gateway named Alai Darwaza at the southern part of the
+                        Quwwat-Ul-Islam Mosque. In 1311, Khilji Sultan of Delhi, Ala-id-din Khiljidesigned a court of
+                        pillars at the eastern side of the minar, and decorated the domed gateway with red sand stones.
+
+                        You can also find Quwwat-Ul-Islam Mosque, Iron Pillar, Tomb of Iltutmish and Alai Minar and
+                        Ala-ud-din Khalji Tomb inside this minar complex. In 1993, UNESCO added this minar complex as a
+                        UNESCO World Heritage Site in India.</div>
+                </div>
+                <div id="two" class="box2 bor">
+                    <div class="name">Red fort complex, Delhi</div>
+                    <a href="https://en.wikipedia.org/wiki/Red_Fort"><img
+                            src="https://images.indianexpress.com/2018/06/red-fort-759-getty-images.jpg"
+                            alt="image here" class="picR"></a>
+
+                    <div class="text">The Red Fort is a historical fort situated in Delhi and it was the main residence
+                        of the Mughal emperors. The fort is located in central Delhi and it was constructed by Shah
+                        Jahan in 1639. The fort is designed with red sand stones, and you can find some large pavilions
+                        connected with the water channels which are known as Stream of Paradise. You can find a perfect
+                        blend between Mughal and Persian architectures in this fort. On 12th May, 1639 Emperor Shah
+                        Jahan started building this fort when he decided to shift his capital from Agra to Delhi.
+                        Ustad Ahmed Lahauri designed this fort, who also believed to have constructed the great Taj
+                        Mahal in India as per some historians. The fort is situated near Yamuna River and every year
+                        Prime Minister of India, hoist the Indian flag and deliver his speech for the nations from this
+                        Red Fort.
+                        You can find several gates like Lahori Gate, Delhi Gate and Water Gate inside this fort premises
+                        and you can visit some historical places like Naubat Khana, Diwan-I-Aam, Nahr-i-Bishist, Mumtaz
+                        Mahal and Diwan-i-Khas in the nearby areas of this fort. UNESCO added this fort as Word Heritage
+                        site in the year 2007.</div>
+                </div>
+                <div id="three" class="box3 bor">
+                    <div class="name">Group of Monuments in Pattadakal</div>
+                    <a href="https://en.wikipedia.org/wiki/Pattadakal"><img
+                            src="https://adventurebuddha.com/wp-content/uploads/2020/07/pattadakal-Virupaksha-temple-tour-with-adventure-buddha-1024x530.jpg"
+                            alt="image here" class="picL"></a>
+
+                    <div class="text">Pattadakal is a famous historical place in India where you can find some of the
+                        oldest Hindu and Jain temples. This is a village situated in Karnataka and it is located near
+                        Malaprabha River in Bagalakote.
+
+                        UNESCO added this place as World Heritage Site in the year 1987.
+
+                        Jain Narayana temple is one of the oldest properties situated in Pattadakal and this temple was
+                        founded by the Rashtrakutas of Manyakheta.
+                        During 9th century, King Amoghavarsha and his son Krishna-II build some beautiful sculptures
+                        inside this temple. The temple is dedicated to Parshvanatha, which is the 23rd tirthankara of
+                        Jainism.
+                        Apart from that, you can also see the grandest temple named Virupaksha temple in Pattadakal, and
+                        you can also find some oldest architectures and monuments like Sangameshwara Temple,
+                        Chandrashekhara Temple, Mallikarjuna Temple, KashiVishwanatha Temple, Galaganatha Temple,
+                        Kadasiddheshwara and Jambulingeshwara Temple, Jambulinga Temple and Papanatha Temple in
+                        Pattadakal. You will be mesmerized by viewing these remarkable historical places and monuments
+                        in your next vacation.</div>
+                </div>
+                <div id="four" class="box4 bor">
+                    <div class="name">Buddhist Monuments in Sanchi</div>
+                    <a href="https://en.wikipedia.org/wiki/Sanchi"><img
+                            src="https://t4.ftcdn.net/jpg/04/57/97/49/360_F_457974921_gxHEw72vBsowfYXDLHpYTRUM0dj0Sw5t.jpg"
+                            alt="image here" class="picR"></a>
+
+                    <div class="text">Sanchi is popular for its Great Stupa situated on the hilltop of Sanchi Town in
+                        Raisen district. This is a Buddhist complex which is situated in Madhya Pradesh, India.
+
+                        During the 3rd century BCE, the Great Emperor Ashoka built this great Sanchi Stupa and this is
+                        the oldest stone structure in India. Curved brick structure built over the Buddha and crowned by
+                        a Chatra are symbolize the peace, honor and shelter of the human beings.
+
+                        Ashoka's wife Devi was a daughter of a renowned merchant living in Sanchi, and Ashoka went there
+                        for his wedding. Afterward, Ashoka built this Stupa with bricks. There arelarge carved gateways
+                        of this Stupa during the 11th century.
+
+                        You can find some pillars polished with some sandstone and the upper portions of the pillars are
+                        designed under the canopy. On these pillars you can find some oldest inscriptions which
+                        originated from the SankhaLipi of Gupta Period.
+
+                        Apart from that, on Stupa One, you can also see some large numbers of Brahmi inscriptions. Here
+                        you can find several temples, statues and sculptures made with sandstone and historians found
+                        some valuable inscriptions and the oldest Buddhist temple no. seventeen in the Sanchi complex.
+
+                        Those who want to explore the classical period of Buddhism, can visit this complex. UNESCO added
+                        this complex as a World Heritage Site in the year of 1989.</div>
+                </div>
+                <div id="five" class="box5 bor">
+                    <div class="name">Ajanta Caves, Near Aurangabad</div>
+                    <a href="https://en.wikipedia.org/wiki/Ajanta_Caves"><img
+                            src="https://breathedreamgo.com/wp-content/uploads/2010/03/India-for-Beginners-custom-tours-5.jpg"
+                            alt="image here" class="picL"></a>
+
+                    <div class="text">Ajanta Caves in Aurangabad, Maharashtra were added as a UNESCO World Heritage Site
+                        in the year of 1983. You can find some ancient paintings and sculptures on these caves, which
+                        describe the oldest Indian art forms. Expressions of these paintings through different gestures,
+                        poses and forms are really expressive.
+
+                        According to notable historians, these paintings and arts are the masterpieces of Buddhism, and
+                        through these art forms, people get to know about the oldest Indian art.
+
+                        According to the historical facts, the first phases of the Ajanta Caves were built during 2nd
+                        century BC and the second phases of these caves were built during 400-650 CE.
+
+                        You can find some ancient paintings on the caves, which describe the rebirth of Buddha, and you
+                        can also find some prayer and worship halls and monasteries inside the caves which show the
+                        different types of traditions of Buddhism.
+
+                        According to old manuscripts, monks, pilgrims and merchants used to stay inside these caves
+                        during the monsoons. Caves no 1, 2, 16 and 17 are the most ancient Indian wall paintings. you
+                        can also find some mural wall paintings, which were painted with vivid natural colors.
+
+                        You can also find the Ellora Caves in the nearby area, where you can see some Hindu and Jain
+                        ancient temples, wall arts, paintings and curved statutes. So explore the oldest Indian culture
+                        by visiting the Ajanta Caves and feel something about the ethereal architectural beauty of
+                        India, with joy.</div>
+                </div>
+                <div id="six" class="box6 bor">
+                    <div class="name">Sun Temple, Konark</div>
+                    <a href="https://en.wikipedia.org/wiki/Konark_Sun_Temple"><img
+                            src="https://d18x2uyjeekruj.cloudfront.net/wp-content/uploads/2021/12/konark.jpg"
+                            alt="image here" class="picR "></a>
+
+                    <div class="text">King Narasimhadeva-I during 1255 CE, built the Konark Sun temple and this temple
+                        is situated in Odisha. You can find some gigantic chariot, carved statutes, stone wheels,
+                        pillars and stone crafted walls in this temple.
+
+                        Now major parts of this temple are restored and UNESCO added this temple as World Heritage Site
+                        in 1984. Apart from that, this temple is also known as one of the Seven Wonder's of India.
+
+                        The temple was designed by Khondalite rocks and this temple was originally built near the
+                        Chandrabhaga River. The temple is dedicated to Sun God or Surya. You can find the giant
+                        ornamented chariot with twelve pairs of wheels which is pilled by set of seven horses inside
+                        this temple.
+
+                        The temple is basically designed according to traditional Kalinga architectural styles, and the
+                        main gate of this temple is situated at the east side, so that the first ray of sun shall
+                        reflect on this main entrance. During the 18th century, the Arunastambha (pillars) was replaced
+                        with Singhadwara or Lion Gate.
+
+                        Now you can find two large size lions standing at the main entrance of this temple. So on next
+                        vacation, you spend some times by exploring this temple and visit the nearest seashore of
+                        Konark.</div>
+                </div>
+                <div id="seven" class="box7 bor">
+                    <div class="name">Taj Mahal, Agra</div>
+                    <a href="https://en.wikipedia.org/wiki/Taj_Mahal"><img
+                            src="https://htoindia.com/wp-content/uploads/2017/06/Taj-Mahal.jpg" alt="image here"
+                            class="picL"></a>
+
+                    <div class="text">The Taj Mahal - one of the Seven Wonders of the World is situated on the south
+                        bank of Yamuna River in Agra. The most beautiful building in the world - Taj Mahal is designed
+                        with marble stones from Makrana of Rajasthan. Taj Mahal was structured by Mughal Emperor Shah
+                        Jahan for his wife Mumtaz Mahal.
+
+                        This is a house of tomb which means Crown of Palace. You can find three sided lush garden areas,
+                        guest rooms and a mosque inside the Taj Mahal premises. The construction of the Mahal was
+                        completed in 1643, but the external parts and other phases of this project contented another ten
+                        years and the full premises and construction was done by 1653.
+
+                        Nobel laureate Rabindranath Tagore described the Taj Mahal as “the tear drop on the cheek of
+                        time”. UNESCOadded this site as World Heritage Site in 1983 and they have added this site as
+                        “the jewel of Muslim Art in India and one of the universally admired masterpieces of the world's
+                        heritage”.
+
+                        The Taj Mahal followed the earlier Mughal architecture and Persian art forms. The tomb of Taj
+                        Mahal is the main highlighted area, and the tomb was designed with marble and situated on the
+                        square plinth.
+
+                        You can find four minarets inside the tomb, and the actual graves of Mumtaz and Shah Jahan were
+                        placed at the lower level of this tomb area. But for the audiences, false sarcophagi were made
+                        in the main chamber of the Taj Mahal. You can find the superior decoration and art forms at the
+                        exterior and interior level of this Mahal, and the exterior decoration was created by paint,
+                        stucco and stone carving.
+
+                        Some decorative elements of this Mahal describe different chapters of Holly Qur'an and the
+                        interior chambers of the Taj Mahal designed with some precious stones with inlay work. So you
+                        can explore this wonder of the world on your next vacation.</div>
+                </div>
+                <div id="eight" class="box8 ">
+                    <div class="name">Rani-Ki-Vav (the Queen's Stepwell) at Patan, Gujarat</div>
+                    <a href="https://en.wikipedia.org/wiki/Rani_ki_Vav"><img
+                            src="https://touristinformationcenter.net/wp-content/uploads/2021/01/Rani-ki-Vav-Patan-1.jpg"
+                            alt="image here" class="picR"></a>
+
+                    <div class="text">Rani ki vav is situated on the banks of Saraswati River and this step well was
+                        built as a memorial site for the king Bhimdev-I. UNESCO added this site as World Heritage Site
+                        on 22nd June, 2014.
+
+                        This step-well was constructed during third millennium BC and it was used as the water storage
+                        reservoir system. Rani ki vav was designed with the Maru Guujara architectural styles with
+                        crafted temples and seven levels of stairs.
+
+                        You can find some oldest ancient sculptures and Rani ki vav was declared as the “Cleanest Iconic
+                        Place” in India. You can find some Hindu sculptures, pillars, carved architectures and temples
+                        inside this complex.
+
+                        Rani ki vav is situated in Patan town of Gujarat.</div>
+                </div>
+                <div align="center">
+                    <p><br>National Anthem:- <audio
+                            src="https://www.deshgujarat.com/wp-content/uploads/2008/01/OurNationalAnthemAudio.mp3"
+                            controls></audio></p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="foot">Designed and Developed by: Rutu Patel</div>
+    </footer>
+
+</body>
+
+</html>
